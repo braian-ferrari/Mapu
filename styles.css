@@ -3,4 +3,20 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
+  z-index: 1000;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+nav.navbar .nav-link,
+nav.navbar .navbar-brand,
+nav.navbar .btn {
+  color: white !important; /* Ítems blancos */
+}
 
