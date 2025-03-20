@@ -23,3 +23,11 @@ nav.navbar .btn {
   color: white !important; /* Ítems blancos */
 }
 
+.botonCar{
+  color: white;
+  border: solid white;
+}
+.botonCar:hover{
+  background-color: gray;
+  border: solid 1px white;
+}
