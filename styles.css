@@ -98,4 +98,8 @@ nav.navbar .btn {
     color: #25D366; /* Color verde de WhatsApp */
     transition: transform 0.3s ease; 
   }
+ 
+  .btnmenu{
+    color: white;
+  }
 }
