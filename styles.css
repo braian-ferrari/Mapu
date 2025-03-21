@@ -37,3 +37,65 @@ nav.navbar .btn {
 .btncontac{
   margin-top: 5%;
 }
+
+.navbar {
+  padding-bottom: 0; /* Ajustamos padding si hay espacio extra */
+}
+
+#navbarMenuMobile {
+  margin-top: 0; /* Ya aparece debajo del nav, podemos ajustar si hay espacio de más */
+}
+.whatsapp-button {
+  position: fixed; /* Hace que el botón se quede fijo */
+  bottom: 20px; /* Distancia desde el fondo de la página */
+  right: 20px; /* Distancia desde el lado derecho de la página */
+  z-index: 999; /* Asegura que el botón esté encima de otros elementos */
+  background-color: transparent; /* Sin fondo */
+  border: none; /* Sin borde */
+  padding: 10px;
+}
+
+.whatsapp-icon {
+  width: 150px;
+  color: #25D366; /* Color verde de WhatsApp */
+  transition: transform 0.3s ease; 
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1); /* Agrandar el ícono cuando se pasa el ratón */
+}
+
+@media screen and (max-width: 768px) {
+.titcarousel{
+    font-size: large;
+  }
+  nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Fondo negro semitransparente */
+    z-index: 1000;
+    padding: 10px 0;
+    
+  }
+  
+  nav.navbar .nav-link,
+  nav.navbar .navbar-brand,
+  nav.navbar .btn {
+    color: white !important; /* Ítems blancos */
+  }
+  .botonCar{
+    color: white;
+    border: solid white;
+    font-size: medium;
+  }
+  .btncontac{
+    margin-bottom: 10%;
+  }
+  .whatsapp-icon {
+    width: 100px;
+    color: #25D366; /* Color verde de WhatsApp */
+    transition: transform 0.3s ease; 
+  }
+}

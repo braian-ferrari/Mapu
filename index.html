@@ -18,28 +18,45 @@
         <a href="/" class="navbar-brand">
           <img src="./images/logo mapu-Photoroom.png" width="100" height="100" alt="">
         </a>
-
-        <!-- Botón hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    
+        <!-- Botón hamburguesa solo visible en mobile -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenuMobile"
+          aria-controls="navbarMenuMobile" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Menú colapsable -->
-        <div class="collapse navbar-collapse " id="navbarMenu">
-          <ul class="navbar-nav ms-auto d-flex align-items-center ">
+    
+        <!-- Menú normal visible en escritorio -->
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarMenuDesktop">
+          <ul class="navbar-nav ms-auto d-flex align-items-center">
             <li class="nav-item"><a href="#" class="nav-link mx-3 px-2 fs-5">Inicio</a></li>
             <li class="nav-item"><a href="#" class="nav-link mx-3 px-2 fs-5">Servicios</a></li>
             <li class="nav-item"><a href="#" class="nav-link mx-3 px-2 fs-5">Proyectos</a></li>
             <li class="nav-item"><a href="#" class="nav-link mx-3 px-2 fs-5">Nosotros</a></li>
-            +
           </ul>
-          <div class=" text-end">
-            <button type="button" class="btn btn-outline-secondary fs-5 ">Contacto</button>
+          <div class="text-end ms-3">
+            <button type="button" class="btn btn-outline-secondary fs-5">Contacto</button>
           </div>
         </div>
       </div>
     </nav>
+    
+    <!-- Menú colapsable solo visible en mobile, debajo del nav -->
+    <div class="collapse d-lg-none" id="navbarMenuMobile">
+      <div class="bg-dark py-3">
+        <div class="container">
+          <ul class="navbar-nav d-flex flex-column align-items-center">
+            <li class="nav-item"><a href="#" class="nav-link text-white fs-5">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white fs-5">Servicios</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white fs-5">Proyectos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white fs-5">Nosotros</a></li>
+          </ul>
+          <div class="mt-3 text-center">
+            <button type="button" class="btn btn-outline-secondary fs-5">Contacto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div id="myCarousel" class="carousel slide mb-6 pointer-event carousel-fade " data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -53,9 +70,9 @@
             width="100%" height="100%" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Sueños hechos realidad.</h1>
+              <h1 class="titcarousel">Sueños hechos realidad.</h1>
               <p class="opacity-75">¡Nuestra dedicación y experiencia hacen la diferencia!</p>
-              <p><a class="btn btn-lg tn-outline-secondary fs-5 botonCar" href="#">Ver Proyectos</a></p>
+              <p><a class="btn btn-lg tn-outline-secondary  botonCar" href="#">Ver Proyectos</a></p>
             </div>
           </div>
         </div>
@@ -63,10 +80,10 @@
           <img src="images/section9.jpg" class="bd-placeholder-img" width="100%" height="100%" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Descubre todos los servicios que ofrecemos para hacer realidad tu proyecto.</h1>
+              <h1 class="titcarousel">Descubre todos los servicios que ofrecemos para hacer realidad tu proyecto.</h1>
               <p>Desde la planificación hasta la entrega final,estamos comprometidos con la calidad y la satisfacción de
                 nuestros clientes.</p>
-              <p><a class="btn btn-lg tn-outline-secondary fs-5 botonCar" href="#">Nuestros servicios</a></p>
+              <p><a class="btn btn-lg tn-outline-secondary botonCar" href="#">Nuestros servicios</a></p>
             </div>
           </div>
         </div>
@@ -74,10 +91,10 @@
           <img src="images/queproponemos3.jpg" class="bd-placeholder-img" width="100%" height="100%" alt="">
           <div class="container">
             <div class="carousel-caption ">
-              <h1>La materia es la forma de la ilusión, el deseo, el esfuerzo y la manifestación.</h1>
+              <h1 class="titcarousel">La materia es la forma de la ilusión, el deseo, el esfuerzo y la manifestación.</h1>
               <p>MAPU se gestó a pulmón y corazón, con la convicción y la certeza de que lo que construimos son SUEÑOS
               </p>
-              <p><a class="btn btn-lg tn-outline-secondary fs-5 botonCar" href="#">Sobre Nosotros</a></p>
+              <p><a class="btn btn-lg tn-outline-secondary botonCar" href="#">Sobre Nosotros</a></p>
             </div>
           </div>
         </div>
@@ -101,12 +118,6 @@
   </div><!-- /.container -->
   <div class="container my-5">
     <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
-      <button type="button"
-        class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill"
-        aria-label="Close"></button>
-      <svg class="bi mt-5 mb-3" width="48" height="48">
-        <use xlink:href="#check2-circle"></use>
-      </svg>
       <h1 class="text-body-emphasis">Abrite a las infinitas posibilidades.</h1>
       <p class="col-lg-6 mx-auto mb-4">
         Todo empieza con una idea que, quizás provenga de una necesidad o de un deseo pero siempre nos abre la puerta
@@ -136,8 +147,7 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1 descprop">Que Proponemos? <span
-              class="text-body-secondary"></span></h2>
+          <h2 class="featurette-heading fw-normal lh-1 descprop font-weight-bold ">Que Proponemos? </h2>
           <p class="lead ">MAPU en lengua Mapuche significa Tierra.
             La tierra que habitamos, la que nos cobija y sobre la que construimos nuestros hogares es a quien honramos
             con nuestro nombre.
@@ -148,10 +158,10 @@
           <p class="lead ">Lo que ofrecemos trasciende el mero cálculo de materiales y mano de obra al construir.
             En MAPU proponemos:
           </p>
-          <p class="lead "> -Encuentros de escucha e intercambio de ideas para conformar el proyecto de construcción.
+          <p class="lead ">- Encuentros de escucha e intercambio de ideas para conformar el proyecto de construcción.
           </p>
-          <p class="lead ">-Eficiencia y optimización de recursos a la hora del armado del plano/proyecto,</p>
-          <p class="lead ">-La articulación con los diferentes rubros que involucra una construcción: arquitectura,
+          <p class="lead ">- Eficiencia y optimización de recursos a la hora del armado del plano/proyecto,</p>
+          <p class="lead ">- La articulación con los diferentes rubros que involucra una construcción: arquitectura,
             planos municipales, proveedores de materiales, electricidad, gas, equipamiento, herrería, aberturas, fletes,
             fin de obra,</p>
         </div>
@@ -167,21 +177,21 @@
 
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1 descprop">Proyectos llave en mano. <span
-              class="text-body-secondary">Nos encargamos de todo</span></h2>
+          <h2 class="featurette-heading fw-normal lh-1 descprop font-weight-bold">Proyectos llave en mano. <span
+              class="text-body-secondary font-weight-bold">Nos encargamos de todo</span></h2>
           <p class="lead">Estos Proyectos constan: </p>
 
-          <p class="lead">El diseño arquitectónico del proyecto</p>
+          <p class="lead">- El diseño arquitectónico del proyecto</p>
 
-          <p class="lead">La gestión de los planos municipales</p>
+          <p class="lead">- La gestión de los planos municipales</p>
 
-          <p class="lead">La logística de los materiales para la construcción</p>
+          <p class="lead">- La logística de los materiales para la construcción</p>
 
-          <p class="lead">La planificación de cada etapa y dirección de la obra</p>
+          <p class="lead">- La planificación de cada etapa y dirección de la obra</p>
 
-          <p class="lead">El asesoramiento en cada detalle</p>
+          <p class="lead">- El asesoramiento en cada detalle</p>
 
-          <p class="lead">Y por último, la entrega de la casa finalizada con la llave en mano.</p>
+          <p class="lead">- Y por último, la entrega de la casa finalizada con la llave en mano.</p>
 
           <p class="lead">Tenes dudas? Informate más en “Nuestros Servicios” </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
@@ -216,7 +226,10 @@
         </div>
       </div>
     </div>
-
+    
+    <a href="https://wa.me/+5491176353062" target="_blank" class="whatsapp-button">
+      <img src="images/whatsapp-icon-Photoroom.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
     <!-- FOOTER -->
 
     <div class="container">
@@ -228,7 +241,7 @@
               <use xlink:href="#bootstrap"></use>
             </svg>
           </a>
-          <p class="text-body-secondary"> Mapu Construcions © 2025</p>
+          <p class="text-body-secondary"> Mapu Construciones © 2025</p>
         </div>
 
         <div class="col mb-3">
