@@ -1,0 +1,149 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
+  z-index: 1000;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+nav.navbar .nav-link,
+nav.navbar .navbar-brand,
+nav.navbar .btn {
+  color: white !important; /* Ítems blancos */
+}
+
+.botonCar{
+  color: white;
+  border: solid white;
+}
+.botonCar:hover{
+  background-color: gray;
+  border: solid 1px white;
+}
+.descprop{
+  margin-bottom: 5%;
+}
+.btncontac{
+  margin-top: 5%;
+}
+
+.navbar {
+  padding-bottom: 0; /* Ajustamos padding si hay espacio extra */
+}
+
+#navbarMenuMobile {
+  margin-top: 0; /* Ya aparece debajo del nav, podemos ajustar si hay espacio de más */
+}
+.whatsapp-button {
+  position: fixed; /* Hace que el botón se quede fijo */
+  bottom: 20px; /* Distancia desde el fondo de la página */
+  right: 20px; /* Distancia desde el lado derecho de la página */
+  z-index: 999; /* Asegura que el botón esté encima de otros elementos */
+  background-color: transparent; /* Sin fondo */
+  border: none; /* Sin borde */
+  padding: 10px;
+}
+
+.whatsapp-icon {
+  width: 150px;
+  color: #25D366; /* Color verde de WhatsApp */
+  transition: transform 0.3s ease; 
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1); /* Agrandar el ícono cuando se pasa el ratón */
+}
+.imgIndex {
+  filter: brightness(60%);
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.card-cover h3 {
+  filter: brightness(120%); /* Restaura el brillo del texto */
+  color: #ffffff; /* Asegura que el texto sea blanco */
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.9); /* Agrega un efecto de brillo */
+  position: relative; /* Asegura que el filtro solo afecte el texto */
+  z-index: 2;
+}
+.hero-section {
+  background-image: url('./images/Imagen\ de\ WhatsApp\ 2024-07-24\ a\ las\ 12.18.22_54a2f2ba\ \(1\).jpg'); /* Cambiá la ruta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Que ocupe toda la altura de la pantalla */
+  width: 100%;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Sombra oscura encima de la imagen */
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+.titcarousel{
+    font-size: large;
+  }
+  nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Fondo negro semitransparente */
+    z-index: 1000;
+    padding: 10px 0;
+    
+  }
+  
+  nav.navbar .nav-link,
+  nav.navbar .navbar-brand,
+  nav.navbar .btn {
+    color: white !important; /* Ítems blancos */
+  }
+  .botonCar{
+    color: white;
+    border: solid white;
+    font-size: medium;
+  }
+  .btncontac{
+    margin-bottom: 10%;
+  }
+  .whatsapp-icon {
+    width: 100px;
+    color: #25D366; /* Color verde de WhatsApp */
+    transition: transform 0.3s ease; 
+  }
+ 
+  .btnmenu{
+    color: white;
+  }
+  .logo{
+    width: 50PX;
+    height: 50px;
+  }
+}
