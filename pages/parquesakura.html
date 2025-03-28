@@ -84,8 +84,8 @@
                 border-radius: 50%;
               }
             </style>
-          </head>
-          <body>
+          
+          
           
             <div class="album py-5 bg-body-tertiary">
               <div class="container">
@@ -374,21 +374,11 @@
               </div>
             </div>
           
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-            <script>
-              // Al abrir la imagen, iniciar en la posición correcta
-              const modal = document.getElementById('imageModal');
-              modal.addEventListener('show.bs.modal', function (event) {
-                const button = event.relatedTarget;
-                const index = button.getAttribute('data-bs-slide-to');
-                const carousel = document.getElementById('carouselImages');
-                const bsCarousel = bootstrap.Carousel.getOrCreateInstance(carousel);
-                bsCarousel.to(parseInt(index));
-              });
-            </script>
-          </body>
-          </html>
+            
           
+            <a href="https://wa.me/+5491164557842" target="_blank" class="whatsapp-button">
+              <img src="../images/whatsapp-icon-Photoroom.png" alt="WhatsApp" class="whatsapp-icon">
+            </a>
       </main>
       <div class="container">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
@@ -421,6 +411,18 @@
         </footer>
       </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
+              // Al abrir la imagen, iniciar en la posición correcta
+              const modal = document.getElementById('imageModal');
+              modal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const index = button.getAttribute('data-bs-slide-to');
+                const carousel = document.getElementById('carouselImages');
+                const bsCarousel = bootstrap.Carousel.getOrCreateInstance(carousel);
+                bsCarousel.to(parseInt(index));
+              });
+            </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
