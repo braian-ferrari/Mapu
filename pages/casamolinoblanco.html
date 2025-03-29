@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <title>Inicio </title>
+      </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+            <a href="../index.html" class="navbar-brand">
+              <img src="../images/logo mapu-Photoroom.png" width="100" height="100" alt="" class="logo">
+            </a>
+        
+            <!-- Botón hamburguesa solo visible en mobile -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenuMobile"
+              aria-controls="navbarMenuMobile" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Menú normal visible en escritorio -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarMenuDesktop">
+              <ul class="navbar-nav ms-auto d-flex align-items-center">
+                <li class="nav-item"><a href="../index.html" class="nav-link mx-3 px-2 fs-5">Inicio</a></li>
+                <li class="nav-item"><a href="../pages/servicios.html" class="nav-link mx-3 px-2 fs-5">Servicios</a></li>
+                <li class="nav-item"><a href="../pages/proyectos.html" class="nav-link mx-3 px-2 fs-5">Proyectos</a></li>
+                <li class="nav-item"><a href="../pages/nosotros.html" class="nav-link mx-3 px-2 fs-5">Nosotros</a></li>
+              </ul>
+              <div class="text-end ms-3">
+                <a href="./pages/contacto.html"><button type="button" class="btn btn-outline-secondary fs-5 btnmenu">Contacto</button></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <!-- Menú colapsable solo visible en mobile, debajo del nav -->
+        <div class="collapse d-lg-none" id="navbarMenuMobile">
+          <div class="bg-dark py-3">
+            <div class="container">
+              <ul class="navbar-nav d-flex flex-column align-items-center">
+                <li class="nav-item"><a href="../index.html" class="nav-link text-white fs-5">Inicio</a></li>
+                <li class="nav-item"><a href="../pages/servicios.html" class="nav-link text-white fs-5">Servicios</a></li>
+                <li class="nav-item"><a href="../pages/proyectos.html" class="nav-link text-white fs-5">Proyectos</a></li>
+                <li class="nav-item"><a href="../pages/nosotros.html" class="nav-link text-white fs-5">Nosotros</a></li>
+              </ul>
+              <div class="mt-3 text-center">
+                <a href="../pages/contacto.html"><button type="button" class="btn btn-outline-secondary fs-5 btnmenu">Contacto</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    <main>
+
+        <section class="hero-sectionsakura d-flex align-items-center">
+            <div class="container text-center">
+              <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                  <h1 class="fw-light text-white">Casa parque Sakura</h1>
+                  <p class="lead text-white">Es una casa realizada en ladrillos de cemento con 65 metros cuadrados distribuidos en una habitación un baño cocina y living con aberturas muy amplias. 
+                    Esta casa está inspirada en los Legos que utilizaba su propietario de chico y cada pared tiene un dibujo diferente que va representando su juego. 
+                    El techo es de losa.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+            <style>
+              .modal-img {
+                max-height: 80vh;
+                object-fit: contain;
+              }
+              .carousel-control-prev-icon,
+              .carousel-control-next-icon {
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 50%;
+              }
+            </style>
+          
+          
+          
+            <div class="album py-5 bg-body-tertiary">
+              <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="col my-3">
+                    <div class="card shadow-sm">
+                      <img src="../images/Casa de norma/molinoblanco1.jpeg" alt="Foto 1" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="0">
+                    </div>
+                  </div>
+                  <div class="col  my-3">
+                    <div class="card shadow-sm">
+                      <img src="../images/Casa de norma/molinoblanco2.jpg" alt="Foto 2" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="1">
+                    </div>
+                  </div>
+                  <div class="col  my-3">
+                    <div class="card shadow-sm">
+                      <img src="../images/Casa de norma/molinoblanco3.jpg" alt="Foto 3" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="2">
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col  my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco4.jpg" alt="Foto 4" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="3">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco5.jpeg" alt="Foto 5" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="4">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco6.jpeg" alt="Foto 6" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="5">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco7.jpg" alt="Foto 7" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="6">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco8.jpg" alt="Foto 8" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="7">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco9.jpg" alt="Foto 9" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="8">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco10.jpeg" alt="Foto 10" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="9">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco110.jpg" alt="Foto 11" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="10">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco11.jpg" alt="Foto 12" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="11">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco12.jpeg" alt="Foto 13" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="12">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco13.jpeg" alt="Foto 14" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="13">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco14.jpeg" alt="Foto 15" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="14">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco15.jpg" alt="Foto 16" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="15">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco16.jpg" alt="Foto 17" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="16">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco17.jpeg" alt="Foto 18" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="17">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco18.jpg" alt="Foto 19" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="18">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco19.jpg" alt="Foto 20" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="19">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco20.jpeg" alt="Foto 21" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="20">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco21.jpeg" alt="Foto 22" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="21">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco22.jpeg" alt="Foto 23" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="22">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco23.jpg" alt="Foto 24" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="23">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco24.jpeg" alt="Foto 25" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="24">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco25.jpg" alt="Foto 26" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="25">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco26.jpg" alt="Foto 27" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="26">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco27.jpeg" alt="Foto 28" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="24">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco28.jpg" alt="Foto 29" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="25">
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <div class="card shadow-sm">
+                        <img src="../images/Casa de norma/molinoblanco29.jpeg" alt="Foto 30" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="26">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          
+            <!-- Modal con Carousel -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark">
+                  <div class="modal-body p-0">
+                    <div id="carouselImages" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                          <img src="../images/Casa de norma/molinoblanco1.jpeg" class="modal-img d-block mx-auto" alt="Foto 1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../images/Casa de norma/molinoblanco2.jpg" class="modal-img d-block mx-auto" alt="Foto 2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../images/Casa de norma/molinoblanco3.jpg" class="modal-img d-block mx-auto" alt="Foto 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco4.jpg" class="modal-img d-block mx-auto" alt="Foto 4">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco5.jpeg" class="modal-img d-block mx-auto" alt="Foto 5">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco6.jpeg" class="modal-img d-block mx-auto" alt="Foto 6">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco7.jpg" class="modal-img d-block mx-auto" alt="Foto 7">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco8.jpg" class="modal-img d-block mx-auto" alt="Foto 8">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco9.jpg" class="modal-img d-block mx-auto" alt="Foto 9">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco10.jpeg" class="modal-img d-block mx-auto" alt="Foto 10">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco110.jpg" class="modal-img d-block mx-auto" alt="Foto 11">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco11.jpg" class="modal-img d-block mx-auto" alt="Foto 12">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco12.jpeg" class="modal-img d-block mx-auto" alt="Foto 13">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco13.jpeg" class="modal-img d-block mx-auto" alt="Foto 14">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco14.jpeg" class="modal-img d-block mx-auto" alt="Foto 15">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco15.jpg" class="modal-img d-block mx-auto" alt="Foto 16">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco16.jpg" class="modal-img d-block mx-auto" alt="Foto 17">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco17.jpeg" class="modal-img d-block mx-auto" alt="Foto 18">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco18.jpg" class="modal-img d-block mx-auto" alt="Foto 19">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco19.jpg" class="modal-img d-block mx-auto" alt="Foto 20">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco20.jpeg" class="modal-img d-block mx-auto" alt="Foto 21">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco21.jpeg" class="modal-img d-block mx-auto" alt="Foto 22">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco22.jpeg" class="modal-img d-block mx-auto" alt="Foto 23">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco23.jpeg" class="modal-img d-block mx-auto" alt="Foto 24">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco24.jpeg" class="modal-img d-block mx-auto" alt="Foto 25">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco25.jpg" class="modal-img d-block mx-auto" alt="Foto 26">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco26.jpg" class="modal-img d-block mx-auto" alt="Foto 27">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco27.jpeg" class="modal-img d-block mx-auto" alt="Foto 25">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco28.jpg" class="modal-img d-block mx-auto" alt="Foto 26">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/Casa de norma/molinoblanco29.jpeg" class="modal-img d-block mx-auto" alt="Foto 27">
+                          </div>
+                          
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselImages" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          
+            
+          
+            <a href="https://wa.me/+5491164557842" target="_blank" class="whatsapp-button">
+              <img src="../images/whatsapp-icon-Photoroom.png" alt="WhatsApp" class="whatsapp-icon">
+            </a>
+      </main>
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <img src="../images/logo mapu-Photoroom.png" alt="Logo Mapu construcciones" class="bi me-2" width="100" height="100">
+              
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <p class="text-body-secondary fw-bold"> Mapu Construciones © 2025</p>
+          </div>
+  
+          <div class="col mb-3">
+  
+          </div>
+  
+          <div class="col mb-3">
+            
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+              <li class="nav-item mb-2"><a href="../pages/servicios.html" class="nav-link p-0 text-body-secondary">Servicios</a></li>
+              <li class="nav-item mb-2"><a href="../pages/proyectos.html" class="nav-link p-0 text-body-secondary">Proyectos</a></li>
+              <li class="nav-item mb-2"><a href="../pages/nosotros.html" class="nav-link p-0 text-body-secondary">Nosotros</a></li>
+              <li class="nav-item mb-2"><a href="../pages/contacto.html" class="nav-link p-0 text-body-secondary">Contacto</a></li>
+            </ul>
+          </div>
+  
+          
+        </footer>
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
+              // Al abrir la imagen, iniciar en la posición correcta
+              const modal = document.getElementById('imageModal');
+              modal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const index = button.getAttribute('data-bs-slide-to');
+                const carousel = document.getElementById('carouselImages');
+                const bsCarousel = bootstrap.Carousel.getOrCreateInstance(carousel);
+                bsCarousel.to(parseInt(index));
+              });
+            </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
