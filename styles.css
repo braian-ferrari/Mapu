@@ -412,7 +412,14 @@ a {
 
 @media screen and (max-width: 768px) {
   
-
+  @media (max-width: 768px) {
+    [data-aos] {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+  }
+  
   .titcarousel {
     font-size: large;
   }
