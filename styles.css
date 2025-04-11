@@ -415,17 +415,14 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    padding-top: 60px;
-    /* Depende del alto de tu navbar */
-  }
+  
 
   .titcarousel {
     font-size: large;
   }
 
   nav.navbar {
-    position: fixed;
+    position:sticky;
     top: 0;
     left: 0;
     width: 100%;
