@@ -12,3 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+
+AOS.init({
+  duration: 1000,   // duración de la animación
+  once: false,      // permite que se repita al volver a aparecer
+  mirror: true      // animación también al hacer scroll hacia arriba
+});
