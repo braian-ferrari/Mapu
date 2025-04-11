@@ -358,14 +358,7 @@ a {
   margin-top: 5px;
 }
 
-.bodyContact {
-  /* Fondo con imagen y gradiente para el difuminado */
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
-    url(./images/FONDO.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
+
 
 .inputNombre {
   width: 50%;
@@ -448,7 +441,7 @@ a {
     /* Ítems blancos */
   }
 
-}
+
 
 .botonCar {
   color: white;
@@ -487,13 +480,15 @@ a {
 .labelApellido {
   margin-left: 25%;
 }
-
 .inputApellido {
   margin-left: 25%;
 }
+
 
 .TituloContac {
   width: 80%;
   font-size: x-large;
   margin-left: 15%;
+}
+
 }
